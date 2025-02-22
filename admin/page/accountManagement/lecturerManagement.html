@@ -11,7 +11,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Lecturer Management</title>
@@ -31,13 +31,13 @@
         <ul class="nav-links">
             <li>
                 <div class="iocn-link">
-                    <a href="../index.html">
+                    <a href="../../index.html">
                         <i class="fas fa-home"></i>
                         <span class="link_name">Dashboard</span>
                     </a>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="../index.html">Dashboard</a></li>
+                    <li><a class="link_name" href="../../index.html">Dashboard</a></li>
                 </ul>
             </li>
             <li>
@@ -50,9 +50,9 @@
                 </div>
                 <ul class="sub-menu">
                     <!-- <li><a class="link_name" href="#"></a></li> -->
-                    <li><a href="../page/studentManagement.html">Student Management</a></li>
-                    <li><a href="#">Lecturer Management</a></li>
-                    <li><a href="#">Internal Admin Management</a></li>
+                    <li><a href="../accountManagement/studentManagement.html">Student Management</a></li>
+                    <li><a href="../accountManagement/lecturerManagement.html">Lecturer Management</a></li>
+                    <li><a href="../accountManagement/internalAdminManagement.html">Internal Admin Management</a></li>
                 </ul>
             </li>
             <li>
@@ -145,7 +145,7 @@
                             <div
                                 class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4">
                                 <div class="flex items-center space-x-4">
-                                    <!--  lọc theo trạng thái -->
+                                    <!--   lọc theo chuyên môn -->
                                     <div>
                                         <button id="dropdownRadioButton" data-dropdown-toggle="dropdownRadio"
                                             class="inline-flex items-center text-gray-700 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-2 transition duration-200 ease-in-out"
@@ -156,7 +156,7 @@
                                                 <path
                                                     d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z" />
                                             </svg> -->
-                                            Filter by status
+                                            Filter by Expertise
                                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -173,7 +173,8 @@
                                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"><label
                                                             for="filter-radio-example-1"
                                                             class="w-full ms-2 text-sm font-medium text-gray-900">Last
-                                                            day</label></div>
+                                                            day</label>
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center p-2 rounded-sm hover:bg-gray-100">
@@ -182,7 +183,8 @@
                                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"><label
                                                             for="filter-radio-example-2"
                                                             class="w-full ms-2 text-sm font-medium text-gray-900">Last 7
-                                                            days</label></div>
+                                                            days</label>
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center p-2 rounded-sm hover:bg-gray-100">
@@ -191,7 +193,8 @@
                                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"><label
                                                             for="filter-radio-example-3"
                                                             class="w-full ms-2 text-sm font-medium text-gray-900">Last
-                                                            30 days</label></div>
+                                                            30 days</label>
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center p-2 rounded-sm hover:bg-gray-100">
@@ -200,7 +203,8 @@
                                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"><label
                                                             for="filter-radio-example-4"
                                                             class="w-full ms-2 text-sm font-medium text-gray-900">Last
-                                                            month</label></div>
+                                                            month</label>
+                                                    </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center p-2 rounded-sm hover:bg-gray-100">
@@ -209,19 +213,20 @@
                                                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"><label
                                                             for="filter-radio-example-5"
                                                             class="w-full ms-2 text-sm font-medium text-gray-900">Last
-                                                            year</label></div>
+                                                            year</label>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
 
-                                    <!-- Khóa học -->
+                                    <!-- trạng thái hoạt động -->
                                     <div>
                                         <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction"
                                             class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 transition duration-200 ease-in-out"
                                             type="button">
                                             <span class="sr-only">Action button</span>
-                                            Course
+                                            Operating status
                                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                                 <path stroke="currentColor" stroke-linecap="round"
@@ -314,22 +319,22 @@
                                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                             Apple MacBook Pro 17"
                                         </th>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-gray-500">
                                             Silver
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-gray-500">
                                             Laptop
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-gray-500">
                                             Yes
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-gray-500">
                                             Yes
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-gray-500">
                                             $2999
                                         </td>
-                                        <td class="px-6 py-4">
+                                        <td class="px-6 py-4 text-gray-500">
                                             3.0 lb.
                                         </td>
                                         <td class="flex items-center px-6 py-4 space-x-3">
@@ -337,138 +342,137 @@
                                             <a href="#" class="font-medium text-red-600 hover:underline">Remove</a>
                                         </td>
                                     </tr>
-                                    <tr
-                                        class="bg-white border-b border-gray-200 hover:bg-gray-50 transition duration-200 ease-in-out">
-                                        <td class="w-4 p-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-search-1" type="checkbox"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2">
-                                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                            Apple MacBook Pro 17"
-                                        </th>
-                                        <td class="px-6 py-4">
-                                            Silver
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            Laptop
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            Yes
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            Yes
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            $2999
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            3.0 lb.
-                                        </td>
-                                        <td class="flex items-center px-6 py-4 space-x-3">
-                                            <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                                            <a href="#" class="font-medium text-red-600 hover:underline">Remove</a>
-                                        </td>
-                                    </tr>
-                                    <tr
-                                        class="bg-white border-b border-gray-200 hover:bg-gray-50 transition duration-200 ease-in-out">
-                                        <td class="w-4 p-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-search-1" type="checkbox"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2">
-                                                <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
-                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                            Apple MacBook Pro 17"
-                                        </th>
-                                        <td class="px-6 py-4">
-                                            Silver
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            Laptop
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            Yes
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            Yes
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            $2999
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            3.0 lb.
-                                        </td>
-                                        <td class="flex items-center px-6 py-4 space-x-3">
-                                            <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                                            <a href="#" class="font-medium text-red-600 hover:underline">Remove</a>
-                                        </td>
-                                    </tr>
-                                    
+
                                 </tbody>
                             </table>
-
-                            <div class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4" aria-label="Table navigation">
-                                <span class="text-sm font-normal text-gray-500 dark:text-gray-500 mb-4 md:mb-0 block w-full md:inline md:w-auto">
-                                    Showing <span class="font-semibold text-gray-900 dark:text-gray-600">1-10</span> of <span class="font-semibold text-gray-900 dark:text-gray-600">1000</span>
+                            <!-- nút điều hướng -->
+                            <div class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4"
+                                aria-label="Table navigation">
+                                <span
+                                    class="text-sm font-normal text-gray-500 dark:text-gray-500 mb-4 md:mb-0 block w-full md:inline md:w-auto">
+                                    Showing <span class="font-semibold text-gray-900 dark:text-gray-600">1-10</span> of
+                                    <span class="font-semibold text-gray-900 dark:text-gray-600">1000</span>
                                 </span>
                                 <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
                                     <li>
-                                        <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-700 bg-white border border-gray-300 rounded-s-lg hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">Previous</a>
+                                        <a href="#"
+                                            class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-700 bg-white border border-gray-300 rounded-s-lg hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">Previous</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">1</a>
+                                        <a href="#"
+                                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">1</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">2</a>
+                                        <a href="#"
+                                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">2</a>
                                     </li>
                                     <li>
-                                        <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-white bg-blue-500 border border-gray-300 hover:bg-blue-400 transition-all duration-200">3</a>
+                                        <a href="#" aria-current="page"
+                                            class="flex items-center justify-center px-3 h-8 text-white bg-blue-500 border border-gray-300 hover:bg-blue-400 transition-all duration-200">3</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">4</a>
+                                        <a href="#"
+                                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">4</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">5</a>
+                                        <a href="#"
+                                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">5</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 rounded-e-lg hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">Next</a>
+                                        <a href="#"
+                                            class="flex items-center justify-center px-3 h-8 leading-tight text-gray-700 bg-white border border-gray-300 rounded-e-lg hover:bg-blue-200 hover:text-blue-700 transition-all duration-200">Next</a>
                                     </li>
                                 </ul>
-                            </div>                            
+                            </div>
 
                         </div>
 
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
-
-                            <!-- Lịch trình hoạt động -->
-
-                            <div class="col-span-2 bg-white p-6 shadow-lg rounded-lg border border-gray-200">
-                                <h2 class="text-xl font-bold mb-4 text-gray-700">Lịch trình hoạt động</h2>
-                                <input type="date" id="scheduleDate" class="border p-3 w-full rounded-lg shadow-inner">
-
-                                <div id="scheduleList" class="mt-4 space-y-4">
-                                    <!-- Danh sách sự kiện sẽ được thêm vào đây -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+                            <!-- Khóa học 1 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                                <img src="" alt="Khóa học"
+                                    class="w-full h-48 object-cover">
+                                <div class="p-4">
+                                    <h2 class="text-xl font-semibold">Khóa học Lập trình Web</h2>
+                                    <p class="text-gray-600 mt-2">Học cách xây dựng trang web từ cơ bản đến nâng cao với
+                                        HTML, CSS, JavaScript.</p>
+                                    <div class="mt-4 flex items-center space-x-2">
+                                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                                        <span class="text-gray-500">(20 đánh giá)</span>
+                                    </div>
                                 </div>
                             </div>
 
+                            <!-- Khóa học 2 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                                <img src="" alt="Khóa học"
+                                    class="w-full h-48 object-cover">
+                                <div class="p-4">
+                                    <h2 class="text-xl font-semibold">Khóa học Thiết kế UI/UX</h2>
+                                    <p class="text-gray-600 mt-2">Khóa học giúp bạn hiểu rõ về thiết kế giao diện người
+                                        dùng và trải nghiệm người dùng.</p>
+                                    <div class="mt-4 flex items-center space-x-2">
+                                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+                                        <span class="text-gray-500">(15 đánh giá)</span>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <!-- Khóa học 3 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                                <img src="" alt="Khóa học"
+                                    class="w-full h-48 object-cover">
+                                <div class="p-4">
+                                    <h2 class="text-xl font-semibold">Khóa học Python cơ bản</h2>
+                                    <p class="text-gray-600 mt-2">Khóa học Python từ cơ bản đến nâng cao, dành cho những
+                                        ai muốn học lập trình.</p>
+                                    <div class="mt-4 flex items-center space-x-2">
+                                        <span class="text-yellow-400">⭐⭐⭐⭐</span>
+                                        <span class="text-gray-500">(10 đánh giá)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            <!-- Thông báo quan trọng -->
-                            <div class="col-span-2 bg-white p-6 shadow-lg rounded-lg border border-gray-200">
-                                <h2 class="text-xl font-bold mb-4 flex items-center text-gray-700">
-                                    <i class="fas fa-bell p-1 text-yellow-500"></i>
-                                    Đăng ký khóa học
-                                </h2>
-                                <ul>
-                                    <li class="p-3 border-b text-gray-600">16h: Name đã đăng ký khóa học</li>
-                                    <li class="p-3 border-b text-gray-600">15h: Name đã đăng ký khóa học</li>
-                                    <li class="p-3 text-gray-600">13h: Name đã đăng ký khóa học</li>
-                                </ul>
+                        <!-- Phần đánh giá giảng viên -->
+                        <div class="mt-8 bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                            <h2 class="text-2xl font-semibold mb-4">Đánh giá của học viên</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-10 h-10 bg-blue-500 text-white flex items-center justify-center rounded-full">
+                                        A</div>
+                                    <div>
+                                        <h3 class="font-semibold">Anh Tuấn</h3>
+                                        <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                                        <p class="text-gray-600 mt-2">Giảng viên rất nhiệt tình và dễ hiểu. Mình học
+                                            được rất nhiều kiến thức hữu ích.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-10 h-10 bg-green-500 text-white flex items-center justify-center rounded-full">
+                                        B</div>
+                                    <div>
+                                        <h3 class="font-semibold">Chị Lan</h3>
+                                        <div class="text-yellow-400">⭐⭐⭐⭐</div>
+                                        <p class="text-gray-600 mt-2">Khóa học tuyệt vời, nhưng mình nghĩ có thể cải
+                                            thiện phần bài tập thực hành thêm.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-10 h-10 bg-red-500 text-white flex items-center justify-center rounded-full">
+                                        C</div>
+                                    <div>
+                                        <h3 class="font-semibold">Anh Minh</h3>
+                                        <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                                        <p class="text-gray-600 mt-2">Giảng viên có kiến thức sâu rộng và luôn giúp đỡ
+                                            học viên nhiệt tình. Rất đáng học.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
