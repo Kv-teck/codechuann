@@ -36,6 +36,9 @@
                         <span class="link_name">Dashboard</span>
                     </a>
                 </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Dashboard</a></li>
+                </ul>
             </li>
             <li>
                 <div class="iocn-link">
@@ -46,10 +49,10 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Posts</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#">Card Design</a></li>
+                    <!-- <li><a class="link_name" href="#"></a></li> -->
+                    <li><a href="../page/studentManagement.html">Student Management</a></li>
+                    <li><a href="../page/lecturerManagement.html">Lecturer Management</a></li>
+                    <li><a href="#">Internal Admin Management</a></li>
                 </ul>
             </li>
             <li>
@@ -61,28 +64,42 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Posts</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#">Card Design</a></li>
+                    <!-- <li><a class="link_name" href="#">Quản lý danh sách khóa học</a></li> -->
+                    <li><a href="#">Course List Management</a></li>
+                    <li><a href="#">Course Content Management</a></li>
+                    <li><a href="#">Course Category Management</a></li>
+                    <li><a href="#">Course Review Moderation</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-credit-card"></i>
-                    <span class="link_name">Bank Payment</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Analytics</a></li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fas fa-credit-card"></i>
+                        <span class="link_name">Bank Payment</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <!-- <li><a class="link_name" href="#">Quản lý giao dịch thanh toán</a></li> -->
+                    <li><a href="#">Payment Transaction Management</a></li>
+                    <li><a href="#">Refund Management</a></li>
+                    <li><a href="#">Revenue Management</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-chart-line"></i>
-                    <span class="link_name">Report</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Report</a></li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="link_name">Report</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <!-- <li><a class="link_name" href="#">Báo cáo học viên</a></li> -->
+                    <li><a href="#">Student Report</a></li>
+                    <li><a href="#">Lecturer Report</a></li>
+                    <li><a href="#">Course Report</a></li>
+                    <li><a href="#">Financial Report</a></li>
                 </ul>
             </li>
             <li>
@@ -94,10 +111,11 @@
                     <i class='bx bxs-chevron-down arrow'></i>
                 </div>
                 <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Settings</a></li>
-                    <li><a href="#">UI Face</a></li>
-                    <li><a href="#">Pigments</a></li>
-                    <li><a href="#">Box Icons</a></li>
+                    <!-- <li><a class="link_name" href="#">Cài đặt chung</a></li> -->
+                    <li><a href="#">General Settings</a></li>
+                    <li><a href="#">Payment Settings</a></li>
+                    <li><a href="#">Permissions and Role Management</a></li>
+                    <li><a href="#">Notification Settings</a></li>
                 </ul>
             </li>
             <li>
@@ -106,25 +124,7 @@
                     <span class="link_name">Personal account</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Explore</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-history'></i>
-                    <span class="link_name">History</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">History</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-cog'></i>
-                    <span class="link_name">Setting</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Setting</a></li>
+                    <li><a class="link_name" href="#">Personal account</a></li>
                 </ul>
             </li>
         </ul>
@@ -192,17 +192,17 @@
                             </div>
 
                             <!-- Lịch trình hoạt động -->
-                            
-                                <div class="col-span-2 bg-white p-6 shadow-lg rounded-lg border border-gray-200">
-                                    <h2 class="text-xl font-bold mb-4 text-gray-700">Lịch trình hoạt động</h2>
-                                    <input type="date" id="scheduleDate" class="border p-3 w-full rounded-lg shadow-inner">
-                                    
-                                    <div id="scheduleList" class="mt-4 space-y-4">
-                                        <!-- Danh sách sự kiện sẽ được thêm vào đây -->
-                                    </div>
+
+                            <div class="col-span-2 bg-white p-6 shadow-lg rounded-lg border border-gray-200">
+                                <h2 class="text-xl font-bold mb-4 text-gray-700">Lịch trình hoạt động</h2>
+                                <input type="date" id="scheduleDate" class="border p-3 w-full rounded-lg shadow-inner">
+
+                                <div id="scheduleList" class="mt-4 space-y-4">
+                                    <!-- Danh sách sự kiện sẽ được thêm vào đây -->
                                 </div>
-                                
-                           
+                            </div>
+
+
 
                             <!-- Thông báo quan trọng -->
                             <div class="col-span-2 bg-white p-6 shadow-lg rounded-lg border border-gray-200">
@@ -295,50 +295,50 @@
         });
     </script>
 
-<!-- lịch trình -->
-<script>
-    const scheduleData = {
-        "2025-02-22": [
-            { time: "08:00 AM", event: "Lớp học Python nâng cao" },
-            { time: "10:00 AM", event: "Hội thảo AI và Machine Learning" },
-            { time: "02:00 PM", event: "Workshop Thiết kế UI/UX" },
-        ],
-        "2025-02-23": [
-            { time: "09:00 AM", event: "Buổi hướng dẫn lập trình Web" },
-            { time: "01:30 PM", event: "Seminar về Blockchain" },
-        ],
-    };
+    <!-- lịch trình -->
+    <script>
+        const scheduleData = {
+            "2025-02-22": [
+                { time: "08:00 AM", event: "Lớp học Python nâng cao" },
+                { time: "10:00 AM", event: "Hội thảo AI và Machine Learning" },
+                { time: "02:00 PM", event: "Workshop Thiết kế UI/UX" },
+            ],
+            "2025-02-23": [
+                { time: "09:00 AM", event: "Buổi hướng dẫn lập trình Web" },
+                { time: "01:30 PM", event: "Seminar về Blockchain" },
+            ],
+        };
 
-    function formatDate(date) {
-        return date.toISOString().split('T')[0];
-    }
-
-    function updateScheduleList(date) {
-        const scheduleList = document.getElementById("scheduleList");
-        scheduleList.innerHTML = "";
-
-        if (scheduleData[date]) {
-            scheduleData[date].forEach(item => {
-                const eventElement = document.createElement("div");
-                eventElement.className = "p-4 bg-gray-100 rounded-lg shadow";
-                eventElement.innerHTML = `<strong>${item.time}</strong>: ${item.event}`;
-                scheduleList.appendChild(eventElement);
-            });
-        } else {
-            scheduleList.innerHTML = `<p class="text-gray-500">Không có sự kiện nào.</p>`;
+        function formatDate(date) {
+            return date.toISOString().split('T')[0];
         }
-    }
 
-    document.getElementById("scheduleDate").addEventListener("change", function() {
-        updateScheduleList(this.value);
-    });
+        function updateScheduleList(date) {
+            const scheduleList = document.getElementById("scheduleList");
+            scheduleList.innerHTML = "";
 
-    // Thiết lập mặc định là ngày hôm nay
-    const today = new Date();
-    const todayFormatted = formatDate(today);
-    document.getElementById("scheduleDate").value = todayFormatted;
-    updateScheduleList(todayFormatted);
-</script>
+            if (scheduleData[date]) {
+                scheduleData[date].forEach(item => {
+                    const eventElement = document.createElement("div");
+                    eventElement.className = "p-4 bg-gray-100 rounded-lg shadow";
+                    eventElement.innerHTML = `<strong>${item.time}</strong>: ${item.event}`;
+                    scheduleList.appendChild(eventElement);
+                });
+            } else {
+                scheduleList.innerHTML = `<p class="text-gray-500">Không có sự kiện nào.</p>`;
+            }
+        }
+
+        document.getElementById("scheduleDate").addEventListener("change", function () {
+            updateScheduleList(this.value);
+        });
+
+        // Thiết lập mặc định là ngày hôm nay
+        const today = new Date();
+        const todayFormatted = formatDate(today);
+        document.getElementById("scheduleDate").value = todayFormatted;
+        updateScheduleList(todayFormatted);
+    </script>
 
 </body>
 
